@@ -1,11 +1,11 @@
-import { useState } from "react";
+import Button from './Components/Button';
 
 function App() {
     return (
-        <>
-            <h2>Teste</h2>
-            <button>Teste</button>
-        </>
+        <Button
+            classes="Primary"
+            text="Botão"
+        />
     );
 }
 
