@@ -4,31 +4,32 @@ import SideBarItem from './Components/SideBarItem';
 function App() {
     return (
         <SideBar
-        header={
-            <SideBarItem 
-                children={<h1>Header</h1>}
-            />
-        }
-        children={
-            <>
+            header={
                 <SideBarItem 
-                    children={<h1>Item 1</h1>}
+                    text="Header"
                 />
+            }
+            children={
+                <>
+                    <SideBarItem 
+                        text="Item 1"
+                    />
+                    <SideBarItem 
+                        text="Item 2"
+                    />
+                    <SideBarItem 
+                        text="Item 3"
+                    />
+                </>
+            }
+            footered={true}
+            footer={
                 <SideBarItem 
-                    children={<h1>Item 2</h1>}
+                    text="Footer"
                 />
-                <SideBarItem 
-                    children={<h1>Item 3</h1>}
-                />
-            </>
-        }
-        footer={
-            <SideBarItem 
-                children={<h1>Footer</h1>}
-            />
-        }
-    />
-      );
+            }
+        />
+    );
 }
 
 export default App;

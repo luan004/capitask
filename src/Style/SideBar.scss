@@ -1,4 +1,22 @@
 .SideBar {
     background-color: #3a3a3a;
-    height:max-content;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    gap: 20px;
+}
+
+.SideBar .ScrollableBox {
+    flex-grow: 1;
+    overflow-y: auto;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.SideBar .Footer {
+    margin-top: auto;
 }

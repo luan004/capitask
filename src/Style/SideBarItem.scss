@@ -1,0 +1,12 @@
+.SideBar .Item {
+    background-color: #575757;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 150px;
+    transition: 0.2s;
+    box-shadow: 0 0 2px rgb(0 0 0 / 20%);
+}
+
+.SideBar .Item:hover {
+    filter: brightness(1.2);
+}
