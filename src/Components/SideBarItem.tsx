@@ -2,7 +2,7 @@ import '../Style/SideBarItem.scss';
 
 function SideBarItem(props: any) {
     return (
-        <div className="Item">
+        <div className="Item" ref={props.href}>
             {!props.image ? null : 
                 <img className='Image' src={props.src} alt={props.alt} />
             }

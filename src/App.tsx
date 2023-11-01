@@ -31,9 +31,6 @@ function App() {
                         src={'https://placehold.it/128x128'}
                         alt={'Usuário'} 
                     />
-                    <SideBarItem 
-                        text="Configurações"
-                    />
                 </>
             }
         />
