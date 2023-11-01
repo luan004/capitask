@@ -1,13 +1,8 @@
-
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ListsSideBar from './View/ListsSideBar';
 
 function App() {
     return (
-        <Router>
-            <Routes>
-                <Route path="/" element={<h1>Teste</h1>} />
-            </Routes>
-        </Router>
+        <ListsSideBar />
     );
 }
 
