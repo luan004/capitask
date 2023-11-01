@@ -3,7 +3,7 @@ body {
   display: flex;
   place-items: center;
   min-height: 100vh;
-  background-color: rgb(61, 61, 61);
+  background-color: #555555;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: white;
 }

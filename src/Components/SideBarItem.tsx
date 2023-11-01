@@ -1,4 +1,4 @@
-import '../Style/SideBarItem.scss';
+import '../Style/SideBarItem.css';
 
 function SideBarItem(props: any) {
     return (

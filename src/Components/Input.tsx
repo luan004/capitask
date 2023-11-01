@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../Style/Input.scss';
+import '../Style/Input.css';
 
 function Input(props: any) {
     

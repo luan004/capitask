@@ -1,4 +1,4 @@
-import '../Style/Button.scss';
+import '../Style/Button.css';
 
 function Button(props: any) {
     return (
