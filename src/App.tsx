@@ -1,39 +1,13 @@
-import SideBar from './Components/SideBar';
-import SideBarItem from './Components/SideBarItem';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
     return (
-        <SideBar
-            header={
-                <SideBarItem 
-                    text="Header"
-                />
-            }
-            children={
-                <>
-                    <SideBarItem 
-                        text="Item 1"
-                    />
-                    <SideBarItem 
-                        text="Item 2"
-                    />
-                    <SideBarItem 
-                        text="Item 3"
-                    />
-                </>
-            }
-            footered={true}
-            footer={
-                <>
-                    <SideBarItem 
-                        text="Usuário"
-                        image={true}
-                        src={'https://placehold.it/128x128'}
-                        alt={'Usuário'} 
-                    />
-                </>
-            }
-        />
+        <Router>
+            <Routes>
+                <Route path="/" element={<h1>Teste</h1>} />
+            </Routes>
+        </Router>
     );
 }
 
