@@ -24,9 +24,17 @@ function App() {
             }
             footered={true}
             footer={
-                <SideBarItem 
-                    text="Footer"
-                />
+                <>
+                    <SideBarItem 
+                        text="Usuário"
+                        image={true}
+                        src={'https://placehold.it/128x128'}
+                        alt={'Usuário'} 
+                    />
+                    <SideBarItem 
+                        text="Configurações"
+                    />
+                </>
             }
         />
     );

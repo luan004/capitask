@@ -5,8 +5,17 @@
     min-width: 150px;
     transition: 0.2s;
     box-shadow: 0 0 2px rgb(0 0 0 / 20%);
+    align-items: center;
+    display: flex;
 }
 
 .SideBar .Item:hover {
     filter: brightness(1.2);
+    cursor: pointer;
+}
+
+.SideBar .Item .Image {
+    height: 32px;
+    margin-right: 10px;
+    border-radius: 50%;
 }

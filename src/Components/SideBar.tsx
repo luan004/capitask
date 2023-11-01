@@ -8,7 +8,9 @@ function SideBar(props: any) {
                 {props.children}
             </div>
             <div className={props.footered ? 'Footer' : ''}>
+                <div className='ScrollableBox'>
                 {props.footer}
+                </div>
             </div>
         </div>
     );
