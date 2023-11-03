@@ -1,33 +1,42 @@
 import Button from "../Components/Button";
 import SideBar from "../Components/SideBar";
+import '../Style/Image.css';
 
 function ListsSideBar() {
     return (
         <SideBar
-        header={
-            <Button 
-                classes="Tab"
-                text="Header"
-            />
-        }
-        children={
-            <>
+            header={
                 <Button 
                     classes="Tab"
-                    text="Button"
+                    text="Header"
                 />
-            </>
-        }
-        footered={true}
-        footer={
-            <div className="Item">
-            <img className='Image' src="https://placehold.it/50x50" alt="Usuário" />
-            <span className="Text">
-                Usuário
-            </span>
-        </div>
-        }
-    />
+            }
+            children={
+                <>
+                    <Button 
+                        classes="Tab"
+                        text="Button"
+                    />
+                    <Button 
+                        classes="Tab"
+                        text="Button"
+                    />
+                    <Button 
+                        classes="Tab"
+                        text="Button"
+                    />
+                </>
+            }
+            footered={true}
+            footer={
+                <div className="Button Tab">
+                    <img className='Image Icon' width={"32px"} src="https://placehold.it/50x50" alt="Usuário" />
+                    <span>
+                        Usuário
+                    </span>
+                </div>
+            }
+        />
     );
 }
 
