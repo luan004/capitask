@@ -3,8 +3,7 @@ import '../Style/SideBar.css';
 
 function SideBar(props: any) {
 
-    //usestate
-    var [closed, setClosed] = useState(false);
+    let [closed, setClosed] = useState(false);
 
     return (
         <div className={`SideBar ` + (closed ? 'Closed' : '')}>
@@ -20,7 +19,7 @@ function SideBar(props: any) {
                 </div>
             </div>
             <button className={`HideButton ` + (closed ? 'Closed' : '')} onClick={() => setClosed(!closed)}>
-                
+                V
             </button>
         </div>
     );
