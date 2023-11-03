@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import '../Style/SideBar.css';
+import { useState } from 'react';
+import '../Style/SideBar.scss';
 
 function SideBar(props: any) {
 
