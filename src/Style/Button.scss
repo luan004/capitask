@@ -10,9 +10,10 @@ $dark: #000000;
 
 .Button {
     border-radius: 10px;
-    border: 2px solid rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(0, 0, 0, 0.4);
     padding: 10px 15px;
     transition: 0.3s;
+    display: flex;
 }
 
 .Button:hover {
@@ -47,4 +48,12 @@ $dark: #000000;
 .Button.Danger {
     background-color: $danger;
     color: $light;
+}
+
+.Button.Tab {
+    text-align: left;
+    background-color: #333338;
+    color: white;
+    font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-size: 16px;
 }

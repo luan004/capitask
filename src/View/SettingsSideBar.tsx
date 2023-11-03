@@ -1,5 +1,5 @@
-import SideBar from "../Components/SideBar/SideBar";
-import SideBarItem from "../Components/SideBar/SideBarItem";
+import SideBar from "../Components/SideBar";
+import SideBarItem from "../Components/SideBarItem";
 
 function ListsSideBar() {
     return (

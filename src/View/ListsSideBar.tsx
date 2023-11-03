@@ -1,37 +1,31 @@
-import SideBar from "../Components/SideBar/SideBar";
-import SideBarItem from "../Components/SideBar/SideBarItem";
+import Button from "../Components/Button";
+import SideBar from "../Components/SideBar";
 
 function ListsSideBar() {
     return (
         <SideBar
         header={
-            <SideBarItem 
+            <Button 
+                classes="Tab"
                 text="Header"
             />
         }
         children={
             <>
-                <SideBarItem 
-                    text="Item 1"
-                />
-                <SideBarItem 
-                    text="Item 2"
-                />
-                <SideBarItem 
-                    text="Item 3"
+                <Button 
+                    classes="Tab"
+                    text="Button"
                 />
             </>
         }
         footered={true}
         footer={
-            <>
-                <SideBarItem 
-                    text="Usuário"
-                    image={true}
-                    src={'https://placehold.it/128x128'}
-                    alt={'Usuário'}
-                />
-            </>
+            <div className="Item">
+            <img className='Image' src="https://placehold.it/50x50" alt="Usuário" />
+            <span className="Text">
+                Usuário
+            </span>
+        </div>
         }
     />
     );
