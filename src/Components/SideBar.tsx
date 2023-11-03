@@ -1,9 +1,16 @@
+import React, { useState } from 'react';
 import '../Style/SideBar.css';
 
 function SideBar(props: any) {
+
+    //usestate
+    var [closed, setClosed] = useState(false);
+
     return (
-        <div className="SideBar">
+        <div className={`SideBar ` + (closed ? 'Closed' : '')}>
+            <div className="ScrollableBox">
             {props.header}
+            </div>
             <div className="ScrollableBox">
                 {props.children}
             </div>
@@ -12,6 +19,9 @@ function SideBar(props: any) {
                 {props.footer}
                 </div>
             </div>
+            <button className={`HideButton ` + (closed ? 'Closed' : '')} onClick={() => setClosed(!closed)}>
+                
+            </button>
         </div>
     );
 }
